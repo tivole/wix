@@ -1,0 +1,25 @@
+{
+  "name": "wix",
+  "displayName": "wix",
+  "description": "VS Code integration for the WiX Toolset",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.86.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "wxs",
+      "aliases": ["Wix", "wxs"],
+      "extensions": [".wxs"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "wxs",
+      "scopeName": "",
+      "path": "./syntaxes/wxs.tmLanguage.json"
+    }]
+  }
+}
